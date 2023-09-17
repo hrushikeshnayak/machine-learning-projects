@@ -17,7 +17,7 @@ Additionally, I will be continuously adding new projects to this repository in t
 
 ## Usage
 
-Feel free to explore the various projects and code samples in this repository. Each project is contained in its respective directory with detailed documentation and instructions on how to use and reproduce the results.
+Feel free to explore the various projects and code samples in this repository. Each project is contained in its respective directory.
 
 ## Contributing
 
