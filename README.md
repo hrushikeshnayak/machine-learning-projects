@@ -14,6 +14,7 @@ Additionally, I will be continuously adding new projects to this repository in t
 - OpenCV Applications
 - YOLO (You Only Look Once) Implementations
 - Scikit-learn
+- Large Language Model
 
 ## Usage
 
