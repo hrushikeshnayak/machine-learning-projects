@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Crop Suggestion</title>
+</head>
+<style>
+    .card {
+        background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+        border: none;
+        box-shadow: 0 0rem 1rem 0 rgba(0, 0, 0, 0.1);
+        width: 100%;
+        height: 100vh;
+    }
+
+    .card-body {
+        background-color: #002244;
+        border-radius: 1rem;
+        text-align: center; 
+
+    }
+
+    .h1 {
+        color: #F0F8FF;
+        margin-top:auto;
+        margin-bottom: .8rem;
+    }
+    .h2{
+        color: white;
+        margin-top: 1rem;
+        margin-bottom:.4rem;
+    }
+
+    .h3 {
+        color: #C7DCA7;
+        margin-top: 1rem;
+        margin-bottom: .4rem;
+    }
+</style>
+
+<body>
+
+    {% include "navbar.html" %}
+
+    <div class="card d-flex justify-content-center align-items-center">
+        <div class="card-body">
+            <h1 class="h1">Crop Recommendation</h1>
+        
+            <h3 class="h3">Crop Details:</h3>
+            <ul>
+                <P class = 'h3'><span class="text-primary">Seed Varieties:</span> {{seed_var}}</P>
+                <P class = 'h3'><span class="text-primary">Seed Conditions:</span> {{seed_con}}</P>
+                <P class = 'h3'><span class="text-primary">Nitrogen Ratio:</span> {{N}}</P>
+                <P class = 'h3'><span class="text-primary">Phosphorous Ratio:</span> {{P}}</P>
+                <P class = 'h3'><span class="text-primary">Potassium Ratio:</span> {{K}}</P>
+                <P class = 'h3'><span class="text-primary">Location Temperature:</span> {{temp}}°C</P>
+                <P class = 'h3'><span class="text-primary">Humidity:</span> {{humid}}%</P>
+                <P class = 'h3'><span class="text-primary">Soil pH:</span> {{ph}}</P>
+                <P class = 'h3'><span class="text-primary">Rainfall Amount:</span> {{rain}} mm</P>
+            </ul>
+        
+            <h2 class="h2">Based on your conditions, <span style="color:#e63946">{{prediction}}</span> crop is recommended.</h2>
+        
+            <h3 class="h3" style="color: #e76f51;">Please share your Feedback for the Suggestion</h3>
+
+        </div>
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    
+</body>
+
+</html>
