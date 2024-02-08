@@ -25,6 +25,7 @@ This Python script demonstrates the process of colorizing black and white images
 - It utilizes a pre-trained Caffe model for image colorization. The model file (`colorization_release_v2.caffemodel`) should be downloaded separately.
 - Grayscale images are converted to LAB color space before being fed into the colorization model. After colorization, the LAB image is converted back to RGB.
 - The colorized images are displayed using Matplotlib.
+<img width="930" alt="image" src="https://github.com/hrushikeshnayak/machine-learning-projects/assets/96150298/f23ad5fc-e89b-4560-beb0-ac154e100ef4">
 
 ## Acknowledgments
 
