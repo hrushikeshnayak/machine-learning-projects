@@ -25,8 +25,7 @@ def download_file(url, filename):
         f.write(response.content)
 
 # URL of the raw file on GitHub
-github_raw_url = 'https://raw.githubusercontent.com/hrushikeshnayak/machine-learning-projects/main/Loan_Eligibility_Prediction/model.joblib
-'
+github_raw_url = 'https://raw.githubusercontent.com/hrushikeshnayak/machine-learning-projects/main/Loan_Eligibility_Prediction/model.joblib'
 
 local_filename = 'model.joblib'
 
