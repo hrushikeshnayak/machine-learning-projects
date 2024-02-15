@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
+import requests
 
 # map age categories
 def map_age(age):
@@ -16,7 +17,22 @@ def map_age(age):
     return age_mapping.get(age, 0)
 
 # Load model
-model = joblib.load('model.joblib')
+
+# Function to download file from GitHub
+def download_file(url, filename):
+    response = requests.get(url)
+    with open(filename, 'wb') as f:
+        f.write(response.content)
+
+# URL of the raw file on GitHub
+github_raw_url = 'https://raw.githubusercontent.com/hrushikeshnayak/machine-learning-projects/main/Loan_Eligibility_Prediction/model.joblib'
+
+local_filename = 'model.joblib'
+
+# Download the file
+download_file(github_raw_url, local_filename)
+
+model = joblib.load(local_filename)
 
 st.title('Loan Eligibility Prediction App')
 
