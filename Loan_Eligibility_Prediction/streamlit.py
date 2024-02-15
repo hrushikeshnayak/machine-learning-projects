@@ -18,7 +18,7 @@ def map_age(age):
 
 # Load model
 
-model = joblib.load('machine-learning-projects/Loan_Eligibility_Prediction/model.joblib')
+model = joblib.load('Loan_Eligibility_Prediction/model.joblib')
 
 st.title('Loan Eligibility Prediction App')
 
