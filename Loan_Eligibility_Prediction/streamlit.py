@@ -17,20 +17,7 @@ def map_age(age):
     return age_mapping.get(age, 0)
 
 # Load model
-
-# Function to download file from GitHub
-def download_file(url, filename):
-    response = requests.get(url)
-    with open(filename, 'wb') as f:
-        f.write(response.content)
-
-# URL of the raw file on GitHub
-github_raw_url = 'https://raw.githubusercontent.com/hrushikeshnayak/machine-learning-projects/main/Loan_Eligibility_Prediction/model.joblib'
-
-local_filename = 'model.joblib'
-
-# Download the file
-download_file(github_raw_url, local_filename)
+local_filename = 'Loan_Eligibility_Prediction/model.joblib'
 
 model = joblib.load(local_filename)
 
