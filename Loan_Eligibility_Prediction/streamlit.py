@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
+import requests
 
 # map age categories
 def map_age(age):
