@@ -81,7 +81,7 @@ def main():
 
 if __name__ == "__main__":
     # Load the pre-trained model
-    model = load_model('final_model.h5')
+    model = load_model('brain_tumor_detection/final_model.h5')
 
     # Set image dimensions
     IMG_WIDTH = 240
