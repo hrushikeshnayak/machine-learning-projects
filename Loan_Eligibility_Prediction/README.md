@@ -23,4 +23,4 @@ Click the "Predict" button after inputting the required parameters. The app will
 
 ## Deployment
 
-The project is deployed and can be accessed through the following link: [Project Link]
+The project is deployed and can be accessed through the following link: https://loan-eligibility-prediction-app.streamlit.app/
